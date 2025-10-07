@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?orkqwr');
+  src: url('fonts/icomoon.eot?orkqwr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?orkqwr') format('truetype'),
+    url('fonts/icomoon.woff?orkqwr') format('woff'),
+    url('fonts/icomoon.svg?orkqwr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.icon-shopping-cart:before {
+  content: "\e900";
+}
+.icon-magnifying-glass:before {
+  content: "\e901";
+}
+.icon-right-arrow:before {
+  content: "\e902";
+}
+.icon-left-arrow:before {
+  content: "\e91e";
+}
+.icon-up-arrow:before {
+  content: "\e91f";
+}
+.icon-down-arrow:before {
+  content: "\e920";
+}
+.icon-car-parking:before {
+  content: "\e903";
+}
+.icon-ruler:before {
+  content: "\e904";
+}
+.icon-condominium:before {
+  content: "\e905";
+}
+.icon-bedroom:before {
+  content: "\e906";
+}
+.icon-quote:before {
+  content: "\e907";
+}
+.icon-telephone:before {
+  content: "\e908";
+}
+.icon-email:before {
+  content: "\e909";
+}
+.icon-residential:before {
+  content: "\e90a";
+}
+.icon-sustainable:before {
+  content: "\e90b";
+}
+.icon-world:before {
+  content: "\e90c";
+}
+.icon-home-automation:before {
+  content: "\e90d";
+}
+.icon-electric-appliance:before {
+  content: "\e90e";
+}
+.icon-swimming-pool:before {
+  content: "\e90f";
+}
+.icon-living-room:before {
+  content: "\e910";
+}
+.icon-kitchen:before {
+  content: "\e911";
+}
+.icon-bedroom-1:before {
+  content: "\e912";
+}
+.icon-public-toilet:before {
+  content: "\e913";
+}
+.icon-chair:before {
+  content: "\e914";
+}
+.icon-apartment:before {
+  content: "\e915";
+}
+.icon-bedroom-2:before {
+  content: "\e916";
+}
+.icon-bathtub:before {
+  content: "\e917";
+}
+.icon-manhattan:before {
+  content: "\e918";
+}
+.icon-measurement:before {
+  content: "\e919";
+}
+.icon-apartment-1:before {
+  content: "\e91a";
+}
+.icon-town:before {
+  content: "\e91b";
+}
+.icon-location:before {
+  content: "\e91c";
+}
+.icon-close:before {
+  content: "\e91d";
+}
+
+
