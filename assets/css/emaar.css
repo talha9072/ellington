@@ -13309,3 +13309,497 @@ section[id] {
     font-size: 1.2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+/* ===== Ellington About Section ===== */
+.ellington-about {
+  background-color: #fff;
+  color: #111;
+  font-family: "Lato", sans-serif;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000;
+  font-family: "Playfair Display", serif;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 520px;
+}
+
+.discover-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.about-stats h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+.about-stats p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+.about-image img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 520px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 28px;
+  }
+  .about-stats h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .about-stats h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* ===== Ellington Values Section ===== */
+.ellington-values {
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  color: #222;
+}
+
+.section-subtitle {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  color: #a68a5b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* ===== Card Style ===== */
+.value-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 360px;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.value-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.value-card:hover .value-img {
+  transform: scale(1.05);
+}
+
+.value-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 25px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+/* ===== Headings Always Visible & Center-Aligned ===== */
+.value-overlay h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+
+/* ===== Paragraph Hidden by Default ===== */
+.value-overlay p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  text-align: center;
+  width: 100%;
+}
+
+/* ===== Hover Effect - Show Paragraph ===== */
+.value-card:hover .value-overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Center align overlay text */
+.value-overlay {
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .value-card {
+    height: 300px;
+  }
+  .value-overlay h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+  }
+  .value-overlay h4 {
+    font-size: 15px;
+  }
+  .value-overlay p {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* ===== Ellington Parallax Showcase ===== */
+.ellington-parallax-showcase {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each Parallax Section */
+.parallax-image {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed; /* 👈 The magic for real parallax */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for depth & readability */
+.parallax-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* ===== Badge Style ===== */
+.badge {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: #d6b87a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Optional smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile Optimization: disable fixed parallax for performance */
+@media (max-width: 992px) {
+  .parallax-image {
+    background-attachment: scroll;
+  }
+}
+
+
+
+/* ===== Amenities Section ===== */
+.amenities-section {
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  color: #111;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient divider under title */
+.amenities-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.amenities-title span {
+  position: relative;
+  z-index: 2;
+}
+
+.amenities-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d6b87a, #a68a5b);
+  border-radius: 2px;
+}
+
+.amenities-subtitle {
+  color: #555;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Amenity Box ===== */
+.amenity-box {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 35px 20px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative;
+}
+
+.amenity-box i {
+  font-size: 32px;
+  color: #d6b87a;
+  margin-bottom: 12px;
+  transition: all 0.4s ease;
+}
+
+.amenity-box h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  letter-spacing: 0.3px;
+  transition: color 0.4s ease;
+}
+
+/* Hover animation */
+.amenity-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(214, 184, 122, 0.3);
+  border-color: #d6b87a;
+}
+
+.amenity-box:hover i {
+  color: #111;
+  transform: scale(1.15);
+}
+
+.amenity-box:hover h5 {
+  color: #d6b87a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .amenity-box {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .amenities-title {
+    font-size: 24px;
+  }
+  .amenity-box i {
+    font-size: 28px;
+  }
+  .amenity-box h5 {
+    font-size: 14px;
+  }
+}
+
+
+
+/* ===== Full Width Project Gallery ===== */
+.project-gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gallery-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: transform 1.5s ease;
+}
+
+/* Subtle zoom on active slide */
+.swiper-slide-active .gallery-img {
+  transform: scale(1.05);
+}
+
+/* ===== Custom Arrows ===== */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+/* Left and right positioning */
+.swiper-button-prev.custom-arrow {
+  left: 40px;
+}
+.swiper-button-next.custom-arrow {
+  right: 40px;
+}
+
+/* Icon styling */
+.custom-arrow i {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Hover glow effect */
+.custom-arrow:hover {
+  background: rgba(214, 184, 122, 0.9);
+  border-color: #d6b87a;
+  color: #111;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.custom-arrow:hover i {
+  transform: translateX(2px);
+}
+
+/* Remove Swiper default arrow content */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .custom-arrow {
+    width: 45px;
+    height: 45px;
+  }
+  .custom-arrow i {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .custom-arrow {
+    width: 38px;
+    height: 38px;
+    left: 20px;
+    right: 20px;
+  }
+}
