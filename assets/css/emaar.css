@@ -13803,3 +13803,222 @@ html {
     right: 20px;
   }
 }
+
+
+
+/* ===== Payment Plan Section ===== */
+.payment-plan {
+  background: url('/assets/images/bg-line.png') no-repeat center center/cover;
+  font-family: "Lato", sans-serif;
+  color: #111;
+}
+
+.payment-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.payment-subtitle {
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+/* ===== Structure ===== */
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== Payment Item ===== */
+.payment-item {
+  text-align: center;
+  min-width: 200px;
+  max-width: 260px;
+}
+
+.payment-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.underline {
+  width: 80%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 auto 8px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-item:hover .underline {
+  background: #d6b87a;
+}
+
+.payment-item p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ===== Highlight main items ===== */
+.payment-item.main h3 {
+  color: #d6b87a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .payment-row {
+    gap: 30px;
+  }
+  .payment-item h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .payment-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment-item {
+    width: 80%;
+  }
+}
+
+
+/* ===== Communities Section ===== */
+.communities-section {
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  color: #111;
+}
+
+.section-subtitle {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  color: #a68a5b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
+.section-text {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ===== Community Card ===== */
+.community-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  aspect-ratio: 16 / 10; /* ✅ ensures all cards have same height-width ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.community-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Overlay ===== */
+.community-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.community-card:hover .overlay {
+  opacity: 1;
+}
+
+/* ===== Overlay Text ===== */
+.overlay h4 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.btn-discover {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  background: #2b3d34;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-discover:hover {
+  background: #a68a5b;
+  color: #fff;
+}
+
+.center-btn {
+  background: #2b3d34;
+}
+
+.center-btn:hover {
+  background: #a68a5b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .communities-section {
+    text-align: center;
+  }
+
+  .section-text {
+    max-width: 90%;
+  }
+
+  .community-card {
+    margin-bottom: 25px;
+    aspect-ratio: 16 / 9; /* slightly wider for mobile */
+  }
+}
